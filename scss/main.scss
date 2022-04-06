@@ -83,49 +83,69 @@ p {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
 }
 @media (min-width: 600px) {
     main {
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        width: 50%;
-        height: auto;
-    }
+        
+        }
 }
 
-main img {
+img {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: auto;
-    width: 50%;
-    text-align: center;
-    padding-left: 6em;
+    width: 75%;
+    align-items: center;
+    // padding-left: 6em;
+    padding-top: 6em;
     
 }
 
-article {
-    background: #B0D785;
-}
+// div.container {
+//     display: flex;
+    
 
 
-figure img {
+// @media (min-width: 600px) {
+//   div.container {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+//         width: 50%;
+//         height: auto;
+//     }
+
+
+
+figure {
+    position: relative;
+    background-image: url("images/veggie border.png");
     display:inline-block;
     text-align: center;
     width: 100%;
     height: auto;
-    margin: -4px;
+    margin: 0px;
     padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #5D8D2A;
+    color: #ffffff;
+    
 }
 
 figcaption {
+    position: relative;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
     text-decoration: underline;
     margin-top: -4px;
+    
 }
 
 
