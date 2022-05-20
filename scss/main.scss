@@ -1,5 +1,5 @@
 body{ 
-    background: #E8F6D9;
+    background: #FAF9F7;
 }
 @media (min-width: 600px){
     body {
@@ -11,9 +11,8 @@ nav {
     display: flex;
     padding: 50px 0px 0px 0px;
     margin: 0px;
-    background: #B0D785;
-    
-}
+    background: #6B916C;
+    }
 
 
 .logo-contain img {
@@ -22,53 +21,59 @@ nav {
    padding-top: 2.5em;
    position: relative;
    align-items: center;
-
-
 }
+
 @media (min-width: 500px) {
     .logo-contain img {
         text-align: center;
+    }
 }
+
+ul {
+    display: flex;
+    flex-direction: column;
 }
-    
+
+@media (min-width: 600px){
+    ul {
+      flex-direction: row;
+    }
+}    
+
 li {
     display: flex;
     flex-direction: column;
     text-align: right;
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
-    text-decoration: underline;
-    
+    text-decoration: none;
 }
-@media (min-width: 600px){
-    li {
-      flex-direction: row;
-    }     
-}
+
+
 a {
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     display: inline-block;
-    color:#5D8D2A;
+    color:#FAF9F7;
     font-size: 16px;
     padding-right: 25px;
-   
 }
 
 a:hover {
-    background: #E8F6D9;
+    background: #A2ADA5;
 }
 
 h2 {
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
     text-decoration: underline;
-    color: #5D8D2A;
-    
+    color: #221c42;
+    width: 100%;
+    padding-bottom: 25px;
 }
 
 h3 {
-    color: #000000;
+    color: #221c42;
     text-align: center;
     text-decoration: underline #000000;
     font-family: 'Fjalla One', sans-serif;
@@ -78,31 +83,34 @@ p {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     padding-bottom: 40px;
-
+    color: #221c42;
 }
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding-top: 100px;
 }
+
 @media (min-width: 600px) {
     main {
         flex-direction: row;
+        justify-content: space-between;
         
-        }
+    }
 }
 
 img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     height: auto;
-    width: 75%;
-    align-items: center;
+    width: 100%;
+    // align-items: center;
     // padding-left: 6em;
-    padding-top: 6em;
+    // padding-top: 6em;
     
 }
 
@@ -124,16 +132,16 @@ img {
 
 figure {
     position: relative;
-    background-image: url("images/veggie border.png");
+    background-image: url("images/food delivery.jpg");
+    background-color: #ffe0c9;
     display:inline-block;
     text-align: center;
     width: 100%;
     height: auto;
     margin: 0px;
     padding-top: 20px;
-    padding-bottom: 50px;
-    background-color: #5D8D2A;
-    color: #ffffff;
+    padding-bottom: 50px; 
+    color: #221c42;
     
 }
 
@@ -142,7 +150,7 @@ figcaption {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
-    color: #ffffff;
+    color: #221c42;
     text-decoration: underline;
     margin-top: -4px;
     
@@ -151,13 +159,14 @@ figcaption {
 
 h4 {
     font-family: 'Fjalla One', sans-serif;
+    color:#A2ADA5;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #B0D785;
+    background: #221c42;
     height:fit-content;
     width: auto;
 }
